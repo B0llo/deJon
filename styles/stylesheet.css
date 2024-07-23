@@ -1,0 +1,163 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Vast+Shadow&display=swap');
+
+
+/* vars */
+html {
+    --background: #efefef;
+    --foreground: #0f0f0f;
+    --card-section-background: #dadada;
+    --shadow-colour: #00000080;
+    --inline-min-margin: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --background: #0f0f0f;
+        --foreground: #efefef;
+        --card-section-background: #262626;
+        --shadow-colour: #ffffff80;
+    }
+}
+
+/* styling */
+
+.invisible {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+template.event {
+    display: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+body>section,
+body>div,
+body>nav {
+
+    padding-inline: var(--inline-min-margin);
+}
+
+h1,
+h2,
+h3,
+nav a {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul a {
+    color: var(--foreground);
+    font-size: .9rem;
+}
+
+div.fold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 5rem 10rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@media (min-width: 760px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    nav ul a {
+        font-style: 1.3rem;
+    }
+}
+
+svg {
+    width: min(50%, 40rem);
+    height: auto;
+}
+
+svg#logo path {
+    stroke: var(--foreground);
+    fill: var(--foreground);
+}
+
+svg#logo path:last-child {
+    fill: var(--background);
+}
+
+section {
+    background-color: var(--card-section-background);
+    padding-block: 1rem;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 40px;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    min-width: 18rem;
+    max-width: 25rem;
+    height: 20rem;
+    background-color: var(--background);
+}
+
+.event div {
+    /* border: 2px var(--shadow-colour); */
+    /* border-style: none inset inset; */
+
+}
+
+.event h3 {
+    margin: 1rem .5rem;
+}
+
+.event p {
+    margin: 0 .5rem;
+}
+
+.event p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.event img {
+    order: -1;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
