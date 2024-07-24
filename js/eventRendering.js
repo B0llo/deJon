@@ -40,7 +40,7 @@
       let pastEvents = []
       events.forEach((e) => {
         let a = new Date(e["date"])
-        let b = (new Date() - 7200000000)
+        let b = (new Date() - 7200000)
         if (a < b) {
           pastEvents.push(e)
         } else {

@@ -1,21 +1,21 @@
 [
   {
-    "name": "Next Event",
-    "date": 1721814248993,
+    "name": "APRES-EXAMS BOITE",
+    "date": "5 july 2024 21:00",
     "location": "Bloeistraat 46, 1070 Anderlecht",
     "description": "Description",
-    "image": "sad meme.png"
+    "image": "postExamenBoite.jpg"
   },{
-    "name": "First Event",
-    "date": 1621814248626,
+    "name": "Verkiezingen voor dummies",
+    "date": "1 june 2024 14:00",
     "location": "Bloeistraat 46, 1070 Anderlecht",
     "description": "Description",
-    "image": "sad meme.png"
+    "image": "verkiezingen.jpg"
   },{
-    "name": "Second Event",
-    "date": 1711814248993,
+    "name": "Study space",
+    "date": "3 june 2024 9:00",
     "location": "Bloeistraat 46, 1070 Anderlecht",
     "description": "Description",
-    "image": "sad meme.png"
+    "image": "studySpace.jpg"
   }
 ]
