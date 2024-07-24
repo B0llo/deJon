@@ -2,7 +2,6 @@
   const nextEventContainer = document.querySelector("#next-event-container")
   const pastEventContainer = document.querySelector("#past-event-container")
   const template = document.querySelector("template.event")
-
   const isHomePage = nextEventContainer.dataset.page === "home"
   const getEventData = async () => {
     const data = await fetch("../data/events.json")
@@ -41,7 +40,7 @@
       let pastEvents = []
       events.forEach((e) => {
         let a = new Date(e["date"])
-        let b = new Date() - 7200000
+        let b = (new Date() - 7200000000)
         if (a < b) {
           pastEvents.push(e)
         } else {
@@ -56,7 +55,7 @@
       nextEvents
         .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0))
         .map(eventToHTML)
-        .forEach(e => nextEventContainer.appendChild(e))
+        .forEach((e) => nextEventContainer.appendChild(e))
       if (!isHomePage) {
         if (pastEvents.length === 0) {
           const eText = document.createElement("p")
@@ -66,7 +65,7 @@
         pastEvents
           .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
           .map(eventToHTML)
-          .forEach(e => pastEventContainer.appendChild(e))
+          .forEach((e) => pastEventContainer.appendChild(e))
       }
     } catch (e) {
       const eText = document.createElement("p")
