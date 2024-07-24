@@ -1,7 +1,19 @@
 [
   {
-    "name": "First Event",
+    "name": "Next Event",
     "date": 1721814248993,
+    "location": "Bloeistraat 46, 1070 Anderlecht",
+    "description": "Description",
+    "image": "sad meme.png"
+  },{
+    "name": "First Event",
+    "date": 1621814248626,
+    "location": "Bloeistraat 46, 1070 Anderlecht",
+    "description": "Description",
+    "image": "sad meme.png"
+  },{
+    "name": "Second Event",
+    "date": 1711814248993,
     "location": "Bloeistraat 46, 1070 Anderlecht",
     "description": "Description",
     "image": "sad meme.png"
