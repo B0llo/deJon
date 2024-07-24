@@ -40,9 +40,10 @@ template.event {
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     color: var(--foreground);
     background-color: var(--background);
+    max-width: 72rem;
 }
 
 body>section,
@@ -121,13 +122,14 @@ section {
     background-color: var(--card-section-background);
     padding-block: 1rem;
 }
-
+section:nth-of-type(2) {
+    margin-top: 2rem;
+}
 .event-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 40px;
 }
-
 .event {
     display: flex;
     flex-direction: column;

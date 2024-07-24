@@ -64,7 +64,7 @@
           pastEventContainer.appendChild(eText)
         }
         pastEvents
-          .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0))
+          .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
           .map(eventToHTML)
           .forEach(e => pastEventContainer.appendChild(e))
       }
