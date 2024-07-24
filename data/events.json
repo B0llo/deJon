@@ -1,36 +1,8 @@
 [
   {
     "name": "First Event",
-    "date": "Sunday 1st of August",
-    "location": "Henri Vieuxtempsstraat 16, 1070 Anderlecht",
-    "description": "Description",
-    "image": "sad meme.png"
-  },
-  {
-    "name": "First Event",
-    "date": "Sunday 1st of August",
-    "location": "Henri Vieuxtempsstraat 16, 1070 Anderlecht",
-    "description": "Description",
-    "image": "sad meme.png"
-  },
-  {
-    "name": "First Event",
-    "date": "Sunday 1st of August",
-    "location": "Henri Vieuxtempsstraat 16, 1070 Anderlecht",
-    "description": "Description",
-    "image": "sad meme.png"
-  },
-  {
-    "name": "First Event",
-    "date": "Sunday 1st of August",
-    "location": "Henri Vieuxtempsstraat 16, 1070 Anderlecht",
-    "description": "Description",
-    "image": "sad meme.png"
-  },
-  {
-    "name": "First Event",
-    "date": "Sunday 1st of August",
-    "location": "Henri Vieuxtempsstraat 16, 1070 Anderlecht",
+    "date": 1721814248993,
+    "location": "Bloeistraat 46, 1070 Anderlecht",
     "description": "Description",
     "image": "sad meme.png"
   }
