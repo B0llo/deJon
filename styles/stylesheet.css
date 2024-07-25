@@ -2,6 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Vast+Shadow&display=swap');
 
+#bubble {
+    display: flex;
+    position: fixed;
+    width: 2vw;
+    height: 57vh;
+    transform: rotate(30deg);
+    mix-blend-mode: darken;
+    animation: shiny 40s ease-in infinite;
+    padding: 0;
+    margin: 0;
+    top: -1rem;
+}
+
+@keyframes shiny {
+    0% {
+        left: -20vw;
+        background: linear-gradient(30deg, #5b5bff, aqua, pink, #5b5bff, aqua, pink, #5b5bff, aqua, pink);
+    }
+
+    5% {
+        left: 200vw;
+    }
+
+    6% {
+        background: none;
+        left: -20;
+    }
+}
 
 /* vars */
 html {
@@ -61,7 +89,19 @@ nav a {
     font-weight: 400;
     font-style: normal;
 }
-
+nav a.active {
+    text-decoration: none;
+}
+nav a.active::after {
+    content: " ";
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin: 5px auto;
+    border-top: 8px var(--foreground) solid;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
 p,
 a {
     font-family: "Poppins", sans-serif;
@@ -122,14 +162,17 @@ section {
     background-color: var(--card-section-background);
     padding-block: 1rem;
 }
+
 section:nth-of-type(2) {
     margin-top: 2rem;
 }
+
 .event-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 40px;
 }
+
 .event {
     display: flex;
     flex-direction: column;
