@@ -19,6 +19,8 @@
     let dateField = clone.querySelector(".event-date")
     let locationField = clone.querySelector(".event-location")
     let imageFrame = clone.querySelector("img")
+    let linkField = clone.querySelector("a")
+    let linkText = clone.querySelector("a span")
 
     nameField.innerHTML = event["name"]
     dateField.innerHTML = new Date(event["date"])
@@ -30,6 +32,8 @@
     locationField.innerHTML = event["location"]
     imageFrame.alt = event["name"] + " Poster"
     imageFrame.src = "../images/" + event["image"]
+    linkField.href = event["name"].replace(" ", "_").toLowerCase()
+    linkText.innerHTML = `More info about ${event["name"]}`
     return clone
   }
   const generateEventCards = async () => {
